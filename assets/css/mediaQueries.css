@@ -1,0 +1,15 @@
+/*==============Media Queries================================*/
+/*==============Media Queries================================*/
+
+media only screen and (max-width: 576px) {
+    /* illustration left */
+    .container .stepImage {
+        height: 5vh;
+        width: 5vw;
+    }
+    .ready {
+        margin-bottom: 0vh;
+    }
+}
+
+/*==============Breakpoint < 576px================================*/

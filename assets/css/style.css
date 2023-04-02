@@ -1,0 +1,329 @@
+/* ==============Generals=============================*/
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto/Roboto-Regular.ttf');
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    font-family: 'Roboto';
+}
+
+/* ==============Header mit zwei Divs============================*/
+header {
+    display: flex;
+    width: 100%;
+}
+
+.logo {
+    height: 30px;
+    padding: 10px 0 0 20px;
+}
+
+/* erstes Div mit Text */
+header div:nth-of-type(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 5vw;
+}
+
+/* zweites div mit background */
+header div:nth-of-type(2) {
+    background-image: url('../img/ilustracion1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    margin-top: -5px;
+}
+
+/* zweites div mit image */
+header div:nth-of-type(2) img {
+    height: 100%;
+    width: 100%;
+    animation-name: people;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes people {
+    from {
+        transform: translateY(2rem);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* ============How to become a better Designer====================*/
+/* h1 vom div 1 */
+header div:nth-of-type(1) h1 {
+    font-size: 4rem;
+    margin: 30vh 0 3vh 0;
+}
+
+/* p vom div 1 */
+header div:nth-of-type(1) p {
+    font-size: 1.4rem;
+}
+
+/* rackete,lightbulb */
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+header div:nth-of-type(1) span {
+    font-size: 1.3rem;
+    color: #ff3571;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 10vh;
+    margin-bottom: 15vh;
+    margin-right: 15vw;
+}
+
+/* =============section images===================================*/
+.images {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 100vw;
+    margin-top: 3vh;
+    margin-bottom: 15vh;
+}
+
+.images div {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.images div img {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+/* =============Every idea==================================*/
+.idea {
+    display: flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+/* beide divs */
+.idea div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.idea div:nth-of-type(1) h2 {
+    width: 20vw;
+    font-size: 2.5rem;
+    margin-bottom: 10vh;
+}
+
+.idea div:nth-of-type(2) p {
+    font-size: 1.3rem;
+    width: 90%;
+}
+
+/* =============After several weeks==================================*/
+.after {
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    margin: 10vh 20vh 10vh;
+}
+
+/* =============After 4ximg h3 und p==================================*/
+/* gallery container */
+article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 70%;
+    margin-left: auto;
+    margin: auto;
+    gap: 4rem 8rem;
+    margin-bottom: 20vh;
+}
+
+article div {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    gap: 2rem;
+}
+
+article div img {
+    width: 20px;
+    height: 20px;
+}
+
+.headlineP {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.textP {
+    width: 70%;
+}
+
+/* ===============Are you ready? Lets go=========================*/
+.ready {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.ready h2 {
+    font-size: 3rem;
+    margin-bottom: 3vh;
+}
+
+.ready p {
+    font-size: 1.5rem;
+    margin: 0 20%;
+    text-align: center;
+    margin-bottom: 6vh;
+}
+
+/* =============== Seite 01 - 04================================*/
+/* container */
+.container {
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+    height: 30vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10vh;
+    gap: 3rem;
+}
+
+/* illustration left */
+.container .stepImage {
+    width: 30vw;
+    margin-top: 15vh;
+}
+
+/* =============== zweites div mit Text================================*/
+
+/* container text Teil */
+.textPart {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 40%;
+    margin-top: 22vh;
+}
+
+.number {
+    font-size: 4rem;
+    font-family: 'Roboto';
+    color: rgb(194, 194, 194);
+    font-weight: bold;
+    margin-bottom: 3rem;
+    margin-top: 5vh;
+}
+
+.emoji {
+    padding: 5px 5px 5px 0;
+    height: 30px;
+    width: 30px;
+    margin-bottom: 1rem;
+}
+
+.textPart h3 {
+    margin-bottom: 1rem;
+}
+
+.texPart p:nth-of-type(2) {
+    font-size: 1.5rem;
+}
+
+
+/* ============Do you like this challenge?================================*/
+
+.challenge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 70vw;
+    height: 3vh;
+    margin: 60vh auto 20vh auto;
+}
+
+.challenge .input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    gap: 2rem;
+}
+
+.input h4 {
+    font-size: 3rem;
+}
+
+.input p {
+    font-size: 1.3rem;
+}
+
+.email {
+    padding: 15px 60px;
+    box-shadow: 10px 4px 100px 1px rgb(170, 170, 170);
+    border: none;
+}
+
+section .input [type="button"] {
+    padding: 15px 30px;
+    background-color: #ff3571;
+    color: white;
+    border: none;
+    transition: background-color 0.5s ease-in-out;
+}
+
+section .input [type="button"]:hover {
+    background-color: #ff004d;
+    cursor: pointer;
+}
+
+footer p {
+    padding: 10px 0 20px 30px;
+}
